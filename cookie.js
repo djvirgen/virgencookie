@@ -30,7 +30,7 @@
         expires = ["; expires=", date.toGMTString()].join("");
       }
       
-      document.cookie = [escape(name), "=", escape(value), expires, "; path=/", "; domain=.go.com"].join("");
+      document.cookie = [escape(name), "=", escape(value), expires].join("");
     },
     
     erase: function(name) {
